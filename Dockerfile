@@ -1,4 +1,5 @@
-FROM alpine:3
+# https://hub.docker.com/_/python
+FROM python:3-alpine
 
 RUN apk --update --no-cache add nodejs nodejs-npm python3 py3-pip jq curl bash git docker && \
 	ln -sf /usr/bin/python3 /usr/bin/python && pip install spacy
