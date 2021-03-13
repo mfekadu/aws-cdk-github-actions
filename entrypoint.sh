@@ -46,6 +46,12 @@ function installAwsCdk(){
 function installPipRequirements(){
 	if [ -e "requirements.txt" ]; then
 		echo "Install requirements.txt"
+		
+		echo "python3 version" $(python3 --version)
+		echo "python version" $(python --version)
+		echo "pip3 version" $(pip3 --version)
+		echo "pip version" $(pip --version)
+
 		if [ "${INPUT_DEBUG_LOG}" == "true" ]; then
 			pip install -r requirements.txt
 		else
