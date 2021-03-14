@@ -1,7 +1,7 @@
 # https://hub.docker.com/_/python
 # https://pythonspeed.com/articles/alpine-docker-python/
 # https://stackoverflow.com/questions/39123988/python3-nodejs-docker-images
-FROM node:6.4.0
+FROM node:latest
 
 RUN apt-get update || : \ 
     && apt-get install python -y \
