@@ -4,7 +4,7 @@
 FROM python:3
 
 RUN apt-get update || : \ 
-    && apt-get install nodejs nodejs-npm -y
+    && apt-get install nodejs npm -y
 
 
 COPY entrypoint.sh /entrypoint.sh
