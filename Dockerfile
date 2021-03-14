@@ -4,9 +4,8 @@
 FROM python:3
 
 RUN apt-get update || : \ 
-    && apt-get install nodejs nodejs-npm -y \
-    && apt-get install python3 python3-pip -y \
-    && ln -sf /usr/bin/python3 /usr/bin/python
+    && apt-get install nodejs nodejs-npm -y
+
 
 COPY entrypoint.sh /entrypoint.sh
 
