@@ -3,6 +3,7 @@
 # https://stackoverflow.com/questions/39123988/python3-nodejs-docker-images
 FROM python:3
 
+# https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/
 RUN apt-get update || : \ 
     && apt-get install nodejs npm -y
 
