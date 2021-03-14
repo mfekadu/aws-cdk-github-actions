@@ -4,12 +4,9 @@
 FROM node:latest
 
 RUN apt-get update || : \ 
-    && apt-get install python -y \
+    && apt-get install python3 -y \
     && apt-get install python3-pip -y \
     && ln -sf /usr/bin/python3 /usr/bin/python
-
-# RUN apk --update --no-cache add nodejs nodejs-npm python3 py3-pip jq curl bash git docker && \
-	ln -sf /usr/bin/python3 /usr/bin/python && pip install spacy
 
 COPY entrypoint.sh /entrypoint.sh
 
